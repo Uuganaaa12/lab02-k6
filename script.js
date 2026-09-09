@@ -15,6 +15,20 @@ import { sleep, check } from 'k6';
 export const options = {
   vus: 5,
   duration: '30s',
+
+  /**
+   * DNS-iin kesh. Uunigui uyed 30 ba tuunees deesh VU deer bukh huselt
+   * "lookup test.k6.io: no such host" gej unasan (nootolgoo:
+   * results/known-issue-dns-30vu.txt). Shaltgaan ni k6 iteration bur deer
+   * shine DNS lookup hiihed macOS-iin resolver 30+ zeregtsee huselt daahgui
+   * bolson yavdal. ttl=inf gesneer hayagiig neg l udaa shiideed testiin
+   * turshid keshleedeg tul asuudal barigdsan.
+   */
+  dns: {
+    ttl: 'inf',
+    select: 'first',
+    policy: 'preferIPv4',
+  },
 };
 
 export default function () {
