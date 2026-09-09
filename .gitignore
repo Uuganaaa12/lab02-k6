@@ -1,0 +1,8 @@
+# Node
+node_modules/
+
+# macOS
+.DS_Store
+
+# k6-iin tur zuuriin fail (yhh garalt results/ dotor hadgalagdana)
+*.tmp
