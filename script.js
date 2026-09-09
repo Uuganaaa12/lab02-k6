@@ -6,7 +6,7 @@ import { sleep, check } from 'k6';
  *
  * Bai (target): https://test.k6.io - k6-iin ALBAN YOSNII dadlagiin sait.
  * Zaavriin yos zuin heseg zuvhun uunig ba lokal server ruu test hiihiig
- * zuvshuursun. Onder sait ruu ogt handahgui.
+ * zuvshuursun. Oor ali ch sait ruu ogt handahgui.
  *
  * VU/duration-g endees bish CLI-gaas ugnu (--vus, --duration) gesen uchir ni
  * Alham 3-d neg l script-eer 5/30/100 VU-g tusad n' ajilluulah shaardlagatai.
@@ -41,6 +41,6 @@ export default function () {
   });
 
   // Bodit hereglegch huudas unshih zavsarlagiig damjuulna.
-  // Ugui bol 1 VU sekundend heden zuun hüseld ilgeeh bolno.
+  // Ugui bol 1 VU sekundend heden zuun huselt ilgeeh bolno.
   sleep(1);
 }
