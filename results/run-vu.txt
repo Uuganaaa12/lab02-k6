@@ -1,0 +1,1 @@
+time="2026-09-09T15:01:25+08:00" level=error msg="invalid argument \"100 100\" for \"-u, --vus\" flag: strconv.ParseInt: parsing \"100 100\": invalid syntax"
